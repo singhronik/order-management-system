@@ -1,6 +1,9 @@
 from django.contrib import admin
 from .models import Customer, Product, Order, OrderItem
 
+admin.site.site_header = "Order Management Admin"
+admin.site.site_title = "Order Management"
+admin.site.index_title = "Welcome to Order Management"
 
 class OrderItemInline(admin.TabularInline):
     model = OrderItem
